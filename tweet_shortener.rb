@@ -43,3 +43,14 @@ def selective_tweet_shortener(tweet)
     tweet
   end  
 end
+
+def selective_tweet_shortener(tweet)
+  if tweet.length > 140
+    word_substituter(tweet)
+      if tweet.length > 140 
+        tweet[-1..-3] = "..."
+      end  
+  else  
+    tweet
+  end  
+end
